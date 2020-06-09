@@ -1,11 +1,16 @@
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1;
+  background-color: #E4ECB1;
+ 
 }
 
 h1{
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
+  color:white;
 }
 
 p{
@@ -14,20 +19,22 @@ p{
 }
 
 textarea{
-  background: transparent;
+  background: #DBB08A;
+  opacity: 0.5;
   border: none;
   resize: none;
-  color: #000000;
+  color: white;
   border-left: 1px solid black;
   padding: 10px;
+  border-bottom: 2px dotted grey;
 }
 
-.jumbotron {
+header {
   text-align: center;
-  background-color: transparent;
   color: black;
-  border-radius: 0;
-  border-bottom: 6px double grey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+ 
 }
 
 .description{
@@ -42,13 +49,14 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color:#DBB6C4;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom: 2px dotted grey;
 }
 
 .past {
@@ -68,10 +76,13 @@ textarea{
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border-bottom: 2px dotted grey;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #CCCAC6;
   color: white;
+  text-align: center;
+  padding-left: 0;
 }
 
 .saveBtn i:hover {
