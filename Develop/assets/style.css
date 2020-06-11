@@ -3,14 +3,14 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1;
-  background-color: #E4ECB1;
+  
  
 }
 
 h1{
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  color:white;
+
 }
 
 p{
@@ -19,22 +19,25 @@ p{
 }
 
 textarea{
-  background: #DBB08A;
+  background:transparent;
   opacity: 0.5;
   border: none;
   resize: none;
-  color: white;
-  border-left: 1px solid black;
+  /* border-left: 1px solid black;
   padding: 10px;
-  border-bottom: 2px dotted grey;
+  border-bottom: 2px dotted grey; */
 }
 
 header {
   text-align: center;
   color: black;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
  
+}
+
+.container {
+  padding-bottom: 40px;
 }
 
 .description{
@@ -48,15 +51,18 @@ header {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 100px;
+  margin-bottom: 2px;
+ 
 }
 
 .hour {
-  background-color:#DBB6C4;
-  color: #000000;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom: 2px dotted grey;
+  background-color:#8ccbbe;
+  color: white;
+  padding-top:5px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .past {
@@ -75,17 +81,43 @@ header {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-bottom: 2px dotted grey;
+  border: none;
   border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-  background-color: #CCCAC6;
+  border-bottom-right-radius: 12px;  
+  background-color: #3797a4;
   color: white;
-  text-align: center;
-  padding-left: 0;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-bottom: 2px;
+  font-size:16px;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+/*Mobile Device*/
+@media (max-width: 750px) {
+  .display-3 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    line-height: 1.2;
+  }
+  
+  .time-block{
+    float:right;
+  }
+  .description{
+    max-width: 60%;
+    float: right;
+  }
+  .hour {
+    min-width: 20%;
+  }
+  .saveBtn {
+    min-width: 20%;
+    float: right;
+  }
+
+} 
