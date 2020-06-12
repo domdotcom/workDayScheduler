@@ -24,21 +24,22 @@ function timeblockCreation(){
         $('.container').append(newRow);
 
         // left side time column
-        var hour = $("<div>");
+        var hour = $('<div>');
         $(hour).attr({ class: "hour col-1 flex", id: 8 + i }).text(workdayHours[i]);
 
         // text area for client input
-        var description = $("<div>");
-        $(description).attr("class", "description col-10");
-        var descriptionRow = $("<div>").attr({ class: "row", id: "description" + (i + 1) });
+        var description = $('<div>');
+        $(description).attr('class', 'description col-10');
+        var descriptionRow = $('<div>').attr({ class: 'row', id: 'description' + (i + 1) });
         $(description).append(descriptionRow);
         // add local storage to textarea
-        var textArea = $("<textarea>").attr({ class: "col-12 flex", id: "textareabutton" + (i + 1) }).text(localStorage.getItem("textareabutton" + (i + 1)));
+        var textArea = $('<textarea>').attr({ class: 'col-12 flex', id: 'textareabutton' + (i + 1) }).text(localStorage.getItem('textareabutton' + (i + 1)));
         $(descriptionRow).append(textArea);
 
         //right side column save button
-        var saveBtn = $("<button>");
-        $(saveBtn).attr({ class: "saveBtn col-1 flex fas fa-lock", id: "button" + (i + 1) });
+        var saveBtn = $('<button>');
+        $(saveBtn).attr({ class: 'saveBtn col-1 flex fas fa-lock', id: 'button' + (i + 1) });
+        var lockIcon = $('')
         $(newRow).append(hour, description, saveBtn);
     };
 // save input to scheduler
